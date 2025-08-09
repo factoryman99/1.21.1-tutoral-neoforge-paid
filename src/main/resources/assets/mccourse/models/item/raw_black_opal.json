@@ -1,5 +1,5 @@
 {
-  "parent": "mincraft:item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "mccourse:item/raw_black_opal"
   }
