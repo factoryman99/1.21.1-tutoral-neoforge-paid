@@ -1,5 +1,6 @@
 package net.factoryman99.mccoursemod;
 
+import net.factoryman99.mccoursemod.item.ModCreativeModeTabs;
 import net.factoryman99.mccoursemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,8 @@ public class MCCourseMod {
     public MCCourseMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
