@@ -1,0 +1,6 @@
+{
+  "parent": "mincraft:item/generated",
+  "textures": {
+    "layer0": "mccourse:item/black_opal"
+  }
+}
