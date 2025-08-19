@@ -1,8 +1,8 @@
 package net.factoryman99.mccoursemod;
 
+import net.factoryman99.mccoursemod.block.ModBlocks;
 import net.factoryman99.mccoursemod.item.ModCreativeModeTabs;
 import net.factoryman99.mccoursemod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -38,6 +38,8 @@ public class MCCourseMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.

@@ -1,5 +1,6 @@
 package net.factoryman99.mccoursemod.item;
 import net.factoryman99.mccoursemod.MCCourseMod;
+import net.factoryman99.mccoursemod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -30,8 +31,8 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.RAW_BLACK_OPAL.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(MCCourseMod.MODID, "black_opal_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(Blocks.ANDESITE);
-                        pOutput.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
+                        pOutput.accept(ModBlocks.BLACK_OPAL_BLOCK);
+                        pOutput.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus){
