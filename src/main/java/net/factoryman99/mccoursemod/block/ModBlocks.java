@@ -27,6 +27,18 @@ public static final DeferredBlock<Block> BLACK_OPAL_ORE = registerBlock("black_o
         () -> new DropExperienceBlock(UniformInt.of(2 , 5),
                 BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
+public static final DeferredBlock<Block> BLACK_OPAL_DEEPSLATE_ORE = registerBlock("black_opal_deepslate_ore",
+        () -> new DropExperienceBlock(UniformInt.of(3 , 6),
+                BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops()));
+
+public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
+        () -> new DropExperienceBlock(UniformInt.of(3 , 8),
+                BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+public static final DeferredBlock<Block> BLACK_OPAL_NETHER_ORE = registerBlock("black_opal_nether_ore",
+        () -> new DropExperienceBlock(UniformInt.of(1 , 7),
+                BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
 
 
 
